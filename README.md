@@ -52,10 +52,14 @@ Abre BigQuery, copia el contenido de sql/transform.sql y ejecútalo.
 La tabla final será INTEGRATION.integration_prueba_tecnica.
 La transformación es idempotente: puedes ejecutarla varias veces sin generar duplicados.
 
-Notas
+Qué hace
 
-El proyecto está preparado para ser reproducible: solo se necesita configurar la cuenta de servicio y las variables de entorno.
+- Crea la tabla final si no existe (INTEGRATION.integration_prueba_tecnica).
 
-La SQL está diseñada para eliminar duplicados por PriceArea y HourUTC, tomando siempre el registro más reciente.
+- Convierte HourUTC de DATETIME a TIMESTAMP para que el MERGE funcione sin errores.
 
-Mantener limpio el repositorio y no subir archivos de credenciales asegura seguridad y facilidad de revisión.
+- Elimina duplicados usando ROW_NUMBER() por PriceArea y HourUTC.
+
+- Mantiene idempotencia, puedes ejecutar varias veces sin duplicar datos.
+
+- Añade transform_date para registrar cuándo se hizo la transformación.
