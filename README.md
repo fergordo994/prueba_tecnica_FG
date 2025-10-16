@@ -6,12 +6,17 @@ Este proyecto descarga datos de precios de electricidad de la API pública de En
 - Estructura del repositorio
 
 prueba_tecnica_FG/
+
 ├─ parte2/
-│ └─ downloader_energinet.py (Script Python para descargar y subir datos a BigQuery)
+
+  │   └─ downloader_energinet.py (Script Python para descargar y subir datos a BigQuery)
+  
 ├─ sql/
-│ └─ transform.sql (Transformación SQL idempotente)
+
+  │ └─ transform.sql (Transformación SQL idempotente)
+
 ├─ README.md (Este archivo)
-└─ .gitignore (Ignora JSON de credenciales y pycache)
+
 
 ## Requisitos
 
@@ -34,6 +39,7 @@ prueba_tecnica_FG/
 - Configurar las variables de entorno antes de ejecutar el script:
 
 export GOOGLE_APPLICATION_CREDENTIALS="/ruta/a/tu/clave.json"
+
 export GCP_PROJECT="tu-project-id"
 
 ⚠️ Nunca subas tu JSON de credenciales al repositorio.
