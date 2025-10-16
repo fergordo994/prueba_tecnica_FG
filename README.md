@@ -1,5 +1,5 @@
 # Prueba Técnica FG: Pipeline de Datos
-##Descripción
+## Descripción
 
 Este proyecto descarga datos de precios de electricidad de la API pública de Energinet, los sube a BigQuery en un dataset sandbox, y luego realiza una transformación idempotente para integrar los datos en la tabla final.
 
@@ -13,7 +13,7 @@ prueba_tecnica_FG/
 ├─ README.md (Este archivo)
 └─ .gitignore (Ignora JSON de credenciales y pycache)
 
-##Requisitos
+## Requisitos
 
 - Python 3.9+
 
