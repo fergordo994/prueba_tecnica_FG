@@ -27,7 +27,7 @@ Para esta parte, cuando lo tengas, puedes adjuntar captura de pantalla y subir e
   resultado en la tabla final debe ser el mismo (no debe generar 
   duplicados).
 
-- Parte3_Airflow/airflow_dag.py - Contiene el achivo py y el pdf donde se explica cada paso con pantallazos comprobando que funciona correctamente.
+- Parte3_Airflow/airflow_dag.py - Contiene el achivo py y el pdf donde se explica cada paso con pantallazos comprobando que funciona correctamente. Además, un pantallazo donde se muestra como
 
 ## Requisitos
 
