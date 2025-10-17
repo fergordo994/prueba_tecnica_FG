@@ -94,16 +94,16 @@ Lista de tareas task_n donde las tareas pares dependen de todas las impares.
 
 Operador TimeDiff que recibe una fecha (diff_date) y muestra la diferencia con la fecha actual.
 
-Para probarlo localmente:
+## Para probarlo localmente:
 
-## Listar DAGs
+### Listar DAGs
 
 airflow dags list
 
-## Ver grafo de un DAG
+### Ver grafo de un DAG
 airflow dags show test
 
-## Ejecutar una tarea específica
+### Ejecutar la tarea de la diferencia horaria
 airflow tasks test test time_diff_task 2025-10-17
 
 ## Requisitos de Airflow:
