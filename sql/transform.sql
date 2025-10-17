@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 CREATE TABLE IF NOT EXISTS `INTEGRATION.integration_prueba_tecnica` (
     PriceArea STRING,
     HourUTC TIMESTAMP,
@@ -47,8 +46,3 @@ WHEN MATCHED THEN
 WHEN NOT MATCHED THEN
   INSERT (PriceArea, HourUTC, SpotPriceDKK, SpotPriceEUR, transform_date)
   VALUES (S.PriceArea, S.HourUTC, S.SpotPriceDKK, S.SpotPriceEUR, S.transform_date);
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 113f7a1 (Todos)
