@@ -23,21 +23,21 @@ Además, la parte 3 cuenta con un DAG de Airflow para orquestacion de tareas.
 
 - Cuenta de Google Cloud Platform con permisos para BigQuery:
 
-- BigQuery Data Editor
+    - BigQuery Data Editor
 
-- BigQuery Job User
+    - BigQuery Job User
 
-- Configuración de credenciales
+- Configuración de credenciales:
 
-- Crear una Service Account en GCP con los permisos mencionados.
+    - Crear una Service Account en GCP con los permisos mencionados.
 
-- Descargar la clave JSON.
+    - Descargar la clave JSON.
 
-- Configurar las variables de entorno antes de ejecutar el script:
+    - Configurar las variables de entorno antes de ejecutar el script:
 
-export GOOGLE_APPLICATION_CREDENTIALS="/ruta/a/tu/clave.json"
+        export GOOGLE_APPLICATION_CREDENTIALS="/ruta/a/tu/clave.json"
 
-export GCP_PROJECT="tu-project-id"
+        export GCP_PROJECT="tu-project-id"
 
 ⚠️ Nunca subas tu JSON de credenciales al repositorio.
 
@@ -45,13 +45,13 @@ export GCP_PROJECT="tu-project-id"
 
 - Descargar y subir datos a BigQuery:
 
-- python parte2/prueba_tecnica.ipynb
+- python Python_BQ/downloader_energinet.py
 
 - Esto creará el dataset SANDBOX_apidata si no existe y subirá los datos descargados.
 
 Ejecutar la transformación SQL:
 
-Abre BigQuery, copia el contenido de sql/transform.sql y ejecútalo.
+Abre BigQuery, copia el contenido de sql/transform.sql en una nuecva query y ejecútalo.
 La tabla final será INTEGRATION.integration_prueba_tecnica.
 La transformación es idempotente: puedes ejecutarla varias veces sin generar duplicados.
 
