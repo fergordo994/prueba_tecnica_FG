@@ -7,27 +7,13 @@ Además, la parte 3 cuenta con un DAG de Airflow para orquestacion de tareas.
 
 # Estructura del repositorio
 
-- Python_BQ/downloader_energinet.py - 1) Tienes que crear un script de Python que se conecte a una API y se descargue los datos (con 100 registros más que suficiente). 
-Tiene que haber una clase para descargar de la API y otra para subirla a BigQuery. Haz un commit con esta parte y súbelo al repositorio como “parte2” (puedes hacer los commits que quieras pero indicando cada parte) 
+- Python_BQ/downloader_energinet.py - Apartado 1 del Ejercicio 2.
 
-- BQ_Dataset/elspot_prices.csv - 2) Los resultados de la conexión a la API los tienes que cargar en un DATASET que te crees en Bigquery. 
-a) El Dataset que reciba los datos de la API debe seguir esta nomenclatura: SANDBOX_<nombre de tu aplicación> 
-Para esta parte, cuando lo tengas, puedes adjuntar captura de pantalla y subir el fichero que genera la tabla al repositorio. 
+- BQ_Dataset/elspot_prices.csv - Apartado 2 del Ejercicio 2.
 
-- sql/transform.sql
-    integration_prueba_tecnica.csv - 3) Vas a transformar los datos del sandbox. Dentro del repositorio, debe haber una carpeta sql/ con al menos un archivo: transform.sql: Este archivo debe contener una única consulta SQL que: ○ Lea los datos de la tabla almacenada en SANDBOX_<nombre de tu aplicación>
-  
-    Realice alguna transformación simple. Por ejemplo: eliminar posibles duplicados del día, añadir una columna con la fecha en que se 
-  ejecuta la transformación…
-  
-    Inserte el resultado transformado en la tabla 
-  INTEGRATION.integration_prueba_tecnica.
-  
-    Requisito clave: La consulta debe ser idempotente. Es decir, si se ejecuta varias veces sobre los mismos datos crudos del día, el 
-  resultado en la tabla final debe ser el mismo (no debe generar 
-  duplicados).
+- sql/transform.sql - Apartado 3 del ejercicio 2.
 
-- Parte3_Airflow/airflow_dag.py - Contiene el achivo py y el pdf donde se explica cada paso con pantallazos comprobando que funciona correctamente. Además, un pantallazo donde se muestra como
+- Parte3_Airflow/airflow_dag.py - Todos los apartados del Ejercicio 3. Contiene el achivo py y el pdf donde se explica cada paso con pantallazos comprobando que funciona correctamente. Además, un pantallazo donde se muestra como hemos lanzado la UI version y lo podemos ver desde la pagina web en local.
 
 ## Requisitos
 
