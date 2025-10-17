@@ -50,10 +50,7 @@ Para esta parte, cuando lo tengas, puedes adjuntar captura de pantalla y subir e
 - Configurar las variables de entorno antes de ejecutar el script:
 
 export GOOGLE_APPLICATION_CREDENTIALS="/ruta/a/tu/clave.json"
-<<<<<<< HEAD
 
-=======
->>>>>>> 113f7a1 (Todos)
 export GCP_PROJECT="tu-project-id"
 
 ⚠️ Nunca subas tu JSON de credenciales al repositorio.
@@ -72,7 +69,7 @@ Abre BigQuery, copia el contenido de sql/transform.sql y ejecútalo.
 La tabla final será INTEGRATION.integration_prueba_tecnica.
 La transformación es idempotente: puedes ejecutarla varias veces sin generar duplicados.
 
-<<<<<<< HEAD
+
 Qué hace
 
 - Crea la tabla final si no existe (INTEGRATION.integration_prueba_tecnica).
