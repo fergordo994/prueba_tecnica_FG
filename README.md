@@ -13,7 +13,7 @@ Además, la parte 3 cuenta con un DAG de Airflow para orquestacion de tareas.
 
 - sql/transform.sql - Apartado 3 del ejercicio 2.
 
-- Parte3_Airflow/airflow_dag.py - Todos los apartados del Ejercicio 3. Contiene el achivo py y el pdf donde se explica cada paso con pantallazos comprobando que funciona correctamente. Además, un pantallazo donde se muestra como hemos lanzado la UI version y lo podemos ver desde la pagina web en local.
+- Parte3_Airflow/airflow_dag.py - Todos los apartados del Ejercicio 3. Contiene el achivo py y el pdf donde se explica cada paso con pantallazos comprobando que funciona correctamente. Además, un pantallazo donde se muestra como hemos lanzado la version web  y lo podemos ver desde la UI en local.
 
 ## Requisitos
 
