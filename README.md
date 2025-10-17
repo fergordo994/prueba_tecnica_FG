@@ -6,6 +6,7 @@ Este proyecto descarga datos de precios de electricidad de la API pública de En
 - Estructura del repositorio
 
 prueba_tecnica_FG/
+<<<<<<< HEAD
 
 ├─ parte2/
 
@@ -17,6 +18,14 @@ prueba_tecnica_FG/
 
 ├─ README.md (Este archivo)
 
+=======
+├─ parte2/
+│ └─ downloader_energinet.py (Script Python para descargar y subir datos a BigQuery)
+├─ sql/
+│ └─ transform.sql (Transformación SQL idempotente)
+├─ README.md (Este archivo)
+└─ .gitignore (Ignora JSON de credenciales y pycache)
+>>>>>>> 113f7a1 (Todos)
 
 ## Requisitos
 
@@ -39,7 +48,10 @@ prueba_tecnica_FG/
 - Configurar las variables de entorno antes de ejecutar el script:
 
 export GOOGLE_APPLICATION_CREDENTIALS="/ruta/a/tu/clave.json"
+<<<<<<< HEAD
 
+=======
+>>>>>>> 113f7a1 (Todos)
 export GCP_PROJECT="tu-project-id"
 
 ⚠️ Nunca subas tu JSON de credenciales al repositorio.
@@ -58,6 +70,7 @@ Abre BigQuery, copia el contenido de sql/transform.sql y ejecútalo.
 La tabla final será INTEGRATION.integration_prueba_tecnica.
 La transformación es idempotente: puedes ejecutarla varias veces sin generar duplicados.
 
+<<<<<<< HEAD
 Qué hace
 
 - Crea la tabla final si no existe (INTEGRATION.integration_prueba_tecnica).
@@ -69,3 +82,12 @@ Qué hace
 - Mantiene idempotencia, puedes ejecutar varias veces sin duplicar datos.
 
 - Añade transform_date para registrar cuándo se hizo la transformación.
+=======
+Notas
+
+El proyecto está preparado para ser reproducible: solo se necesita configurar la cuenta de servicio y las variables de entorno.
+
+La SQL está diseñada para eliminar duplicados por PriceArea y HourUTC, tomando siempre el registro más reciente.
+
+Mantener limpio el repositorio y no subir archivos de credenciales asegura seguridad y facilidad de revisión.
+>>>>>>> 113f7a1 (Todos)
